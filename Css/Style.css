@@ -1,0 +1,337 @@
+*{
+    font-family: 'Rubik', sans-serif;
+    margin:0; 
+    padding:0;
+    box-sizing: border-box;
+    outline: none; border:none;
+    text-decoration: none;
+    transition: .5s linear !important;
+    text-transform: capitalize;
+ }
+
+:root{
+    --green: #00E77F;
+    --white: #fff;
+    --light-white: #aaa;
+    --black: #3d3d3d;
+    --light-bg: #4b4b4b;
+}
+
+html{
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 8rem;
+}
+#topbtn{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+#topbtn.btn{
+    background-color: var(--light-white);
+}
+.color-box{
+    position: fixed;
+    left: 0;
+    top: 200px;
+    z-index: 99999;
+}
+.color-box .color-options{
+    border: 3px solid #00E77F;
+}
+.color-box .color-options h2{
+    color: #fff;
+}
+.color-box .color-options li{
+    width: 30px;
+    height: 30px;
+    background-color: var(--green);
+    display: inline-block;
+}
+.color-box i{
+    background-color: #00E77F;
+    height: fit-content;
+}
+
+
+::-webkit-scrollbar{
+    height: 0.5rem;
+    width: 1rem;
+ }
+::-webkit-scrollbar-track{
+    background-color: transparent;
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--green);
+    border-radius: 5rem;
+ }
+body{
+    background-color: var(--black);
+}
+section{
+    max-width: 1200px;
+    margin:0 auto;
+    padding:2rem;
+ }
+.header{
+    background-color: var(--light-bg);
+    z-index: 1000;
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    overflow: hidden;
+}
+.header .logo{
+    font-size: 2rem;
+    color:var(--white);
+}
+.header .navbar{
+    margin-left: 2rem;
+    color:var(--light-white);
+    font-size: 1.5rem;
+}
+
+.header .nav-item a{
+    margin-left: 1.5rem;
+    color: var(--light-white);
+}
+.header .nav-item a:hover{
+    color:var(--green);
+}
+section.home{
+    margin-top: 4rem;
+}
+.row .content h3{
+    font-size: 6rem;
+    line-height: 1;
+    color: var(--white);
+    text-align: center;
+}
+.row span{
+    color: var(--green);
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    border-radius: 5rem;
+    background-color: var(--light-bg);
+    cursor: pointer !important;
+    color:var(--white);
+    padding:1rem 3rem;
+}
+.btn:hover{
+    background-color: var(--white);
+    color:var(--black);
+}
+
+.row .box{
+    padding: 2rem;
+    border-radius: 0.5rem;
+    gap: 1.5rem;
+    background-color: var(--light-bg);
+ }
+.row .box i{
+    font-size: 5rem;
+    color: var(--green);
+}
+.row .box .content h2{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+.row .box .content p{
+    font-size: 1.6rem;
+    color: var(--light-white);
+}
+
+.row .About-content p{
+    color: var(--light-white);
+    line-height: 2;
+    padding: 1rem 0;
+    font-size: 1rem;
+}
+
+.row .heading{
+    font-size: 3.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    margin-bottom: 2.5rem;
+}
+#owl-demo .card{
+    background: var(--light-bg);
+    border-radius: 0.5rem;
+    text-align: center !important;
+    padding: 2rem;
+    margin-bottom: 4rem;
+    text-align: center;
+}
+
+#owl-demo .card img {
+    height: 15rem;
+    width: 100%;
+}
+#owl-demo .card .card-body{
+    height: 12rem;
+    width: 100%;
+}
+#owl-demo .card .card-body  .card-text{
+    color: var(--light-white);
+}
+.owl-carousel .item{
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    width:100%;
+}
+.owl-carousel .item img{
+    height: 25rem;
+    object-fit: cover;
+    cursor: pointer;
+}
+.owl-carousel .item .share{
+    position: absolute;
+    top: 1rem;
+    left: -10rem;
+}
+.owl-carousel .item:hover .share{
+    left: 3rem;
+}
+.owl-carousel .item .share a{
+    display: block;
+    margin-top: 1rem;
+    height:2.5rem;
+    width:2.5rem;
+    line-height:2.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--white);
+    color: var(--black);
+    text-align: center;
+    font-size: 2rem;
+}
+.owl-carousel .item .share a:hover{
+    background-color: var(--green);
+}
+.owl-carousel .item h3{
+    margin-top: 1.5rem;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--white);
+}
+.owl-carousel .card2{
+    background-color: var(--light-bg);
+    padding: 2rem;
+    margin-right: 20px;
+}
+.owl-carousel .card2 p{
+    line-height: 2;
+    font-size: 1.2rem;
+    color: var(--light-white);
+}
+.owl-carousel .card2 .card-body{
+    gap: 1.5rem;
+}
+.owl-carousel .card2 .card-body img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.owl-carousel .card2 .card-body .student-info h3{
+    font-size: 2rem;
+    color: var(--white);
+    margin-bottom: 0.7rem;
+}
+.owl-carousel .card2 .card-body .student-info .stars i{
+    font-size: 1.2rem;
+    color: var(--green);
+}
+.row .col-md-6 .box{
+    width: 100%;
+    background-color: var(--light-bg);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    color: white;
+    text-transform: none;
+    padding: 1rem;
+    margin: 2rem 0;
+}
+.row .col-md-6 label{
+    font-size: 1rem;
+    color: var(--light-white);
+}
+.form-check-input{
+    border-radius: 5rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--light-bg);
+}
+.form-check-input:checked{
+    background-color: var(--green);
+    border-color: var(--green);
+}
+.footer{
+    background-color: var(--light-bg);
+    text-align: center;
+}
+.footer .share a{
+    display: inline-block;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    text-decoration: none;
+    line-height: 4.5rem;
+    font-size: 2rem;
+    color: white;
+    background-color: var(--black);
+    margin: 0 0.3rem;
+}
+.footer .share a:hover{
+    background-color: var(--green);
+}
+.footer .credit{
+    margin-top: 2.5rem;
+    padding:1.5rem;
+    padding-top: 2.5rem;
+    border-top: .1rem solid var(--light-white);
+    font-size: 2rem;
+    color:var(--light-white);
+ }
+ 
+.footer .credit span{
+    color:var(--green);
+}
+
+
+
+
+
+
+
+@media (max-width:1448px){
+    .row .box i{
+        font-size: 1.5rem;
+    }
+
+}
+
+@media (max-width:991px){
+
+    html{
+       font-size: 55%;
+    }
+    .row .box i{
+        font-size: 3rem;
+    }
+
+}
+@media (max-width:500px){
+
+    html{
+       font-size: 45%;
+    }
+    .row .box i{
+        font-size: 3rem;
+    }
+
+}
